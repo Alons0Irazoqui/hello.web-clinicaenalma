@@ -31,7 +31,7 @@
     document.body.classList.add('is-loading');
     var fill = loader.querySelector('.loader-bar-fill');
     var start = Date.now();
-    var minDisplay = 1100;
+    var minDisplay = 1800;
 
     if (fill) requestAnimationFrame(function () { fill.style.width = '92%'; });
 
@@ -43,7 +43,7 @@
         setTimeout(function () {
           loader.classList.add('loader-hide');
           document.body.classList.remove('is-loading');
-        }, 200);
+        }, 360);
       }, wait);
     }
 
